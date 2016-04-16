@@ -1,0 +1,316 @@
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: white;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.border {
+  border: 2px solid red;
+}
+
+.wrapper {
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  max-width: 600px;
+  max-height: 300px;
+  margin: auto;
+}
+
+.left {
+  background: rgba(64, 191, 64, .75);
+  text-align: center;
+  color: white;
+  border-bottom-left-radius: 25px 10%;
+}
+
+.left-top {
+  height: 65%;
+  width: 100%;
+}
+
+.right-top {
+  height: 70%;
+  width: 100%;
+}
+
+.left-bottom {
+  height: 35%;
+  width: 100%;
+}
+
+.city {
+  height: 25%;
+  width: 100%;
+}
+
+.condition {
+  height: 30%;
+  width: 100%;
+}
+
+.temp {
+  height: 70%;
+  width: 100%;
+}
+
+.temp div:first-child {
+  position: relative;
+  display: table;
+  height: 100%;
+  width: 40%;
+  float: left;
+  text-align: right;
+}
+
+.temp div span {
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+  padding-right: 10px;
+  font-size: 60px;
+}
+
+.temp-info {
+  height: 100%;
+  width: 60%;
+  float: left;
+  display: table;
+}
+
+.temp-info h3 {
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+  margin: 0px;
+  padding: 0px;
+  text-align: left;
+  font-weight: 300;
+  font-size: 80px;
+}
+
+.city h4 {
+  margin-top: 15px;
+  font-size: 32px;
+}
+
+.left,
+.right {
+  display: inline block;
+  float: left;
+  height: 100%;
+  width: 50%;
+}
+
+.left-bottom-left,
+.left-bottom-right {
+  position: relative;
+  float: left;
+  height: 60%;
+  width: 50%;
+  text-align: center;
+  top: -10px;
+}
+
+.left-bottom-left span,
+.left-bottom-right span {
+  font-size: 30px;
+}
+
+.left-bottom-left h3,
+.left-bottom-right h3 {
+  position: relative;
+  margin-top: -15px;
+}
+
+.left-bottom-bottom {
+  float: left;
+  height: 40%;
+  width: 100%;
+}
+
+.left-bottom-bottom h6 {
+  margin-top: 10px;
+  font-weight: 300;
+}
+
+.right-top {
+  opacity: .5;
+  background: black;
+  position: relative;
+}
+
+.weather-icon {
+  height: 70%;
+  width: 100%;
+  text-align: center;
+}
+
+.condition h4 {
+  text-align: center;
+  color: white;
+  margin-top: 10px;
+  font-size: 28px;
+}
+
+.right-bottom {
+  height: 30%;
+}
+
+.right-bottom-left,
+.right-bottom-right {
+  height: 100%;
+  width: 50%;
+  float: left;
+}
+
+.right-bottom-left {
+  background: rgba(255,255,255,.75)
+}
+
+.wind-speed,
+.wind-direction {
+  height: 50%;
+  width: 100%;
+}
+
+.wind-speed div:first-child {
+  height: 100%;
+  width: 40%;
+  display: table;
+  float: left;
+  text-align: right;
+}
+
+.wind-speed div span {
+  display: table-cell;
+  vertical-align: middle;
+  padding-right: 10px;
+  font-size: 22px;
+}
+
+.wind-info {
+  height: 100%;
+  width: 60%;
+  float: left;
+  display: table;
+}
+
+.wind-info h3 {
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  width: 100%;
+  margin-left: 5px;
+  font-size: 26px;
+}
+
+.wind-info h3 b {
+  margin-left: 5px;
+  font-size: 15px;
+}
+
+.wind-direction {
+  text-align: center;
+}
+
+.wind-direction span,
+.wind-direction h3 {
+  display: inline-block;
+  margin-top: 0px;
+}
+
+.wind-direction span {
+  font-size: 40px;
+}
+
+.wind-direction h3 {
+  position: relative;
+  font-size: 32px;
+  margin-left: 15px;
+  bottom: 3px;
+}
+
+.right-bottom-right {
+  background: rgba(153, 153, 153, .75);
+  border-bottom-right-radius: 25px 30%;
+}
+
+.right-bottom-right > div:first-child {
+  height: 25%;
+}
+
+.switch-wrapper {
+  height: 50%;
+}
+
+.switch {
+  position: relative;
+  height: 100%;
+  width: 60%;
+  margin: auto;
+  background: rgba(89,89,89, .5);
+  border-radius: 10px;
+}
+
+.selected,
+.unselected {
+  height: 100%;
+  width: 50%;
+  float: left;
+  text-align: center;
+  font-size: 35px;
+}
+
+.selected {
+  border: 2px;
+  border-radius: 10px;
+  background: #009999;
+  border-top-color: #f0f5f5;
+  border-right-color: ;
+  border-bottom-color: ;
+  border-left-color: #f0f5f5;
+  color: white;
+}
+
+.unselected {
+  border: 3px;
+  border-left: 0px;
+  border-radius: 10px;
+  color: rgba(0,0,0,.4);
+}
+
+.selected span,
+.unselected span {
+  position: relative;
+  vertical-align: middle;
+  margin: auto;
+}
+
+.info {
+  position: relative;
+  bottom: 0px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 300;
+  color: rgba(0,0,0,.5);
+}
+
+.info h5 a {
+  text-decoration: none;
+  color: rgba(0,0,0,.5)
+}

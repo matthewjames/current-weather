@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Current Weather</title>
+	<link rel="stylesheet" type="text/css" href="current_weather.css">
+  <link rel="stylesheet" type="text/css" href="weather_icons.css">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css" rel="stylesheet" type="text/css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons-wind.css" rel="stylesheet" type="text/css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons-wind.min.css" rel="stylesheet" type="text/css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.css" rel="stylesheet" type="text/css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css" rel="stylesheet" type="text/css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/font/weathericons-regular-webfont.eot" rel="stylesheet" type="text/css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/font/weathericons-regular-webfont.svg" rel="stylesheet" type="text/css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/font/weathericons-regular-webfont.ttf" rel="stylesheet" type="text/css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/font/weathericons-regular-webfont.woff" rel="stylesheet" type="text/css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/font/weathericons-regular-webfont.woff2" rel="stylesheet" type="text/css">
+
+</head>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script type="text/javascript" src="current_weather.js"></script>
+
+
+<body>
+	<div class="container">
+  <div class="left">
+    <div class="left-top">
+      <div class="city">
+        <h4></h4>
+      </div>
+      <div class="temp">
+        <div>
+            <span class="wi wi-thermometer"></span>
+        </div>
+        <div class="temp-info">
+        </div>
+      </div>
+    </div> <!-- /.left-top -->
+    <div class="left-bottom">
+      <div class="left-bottom-left">
+      <span class="wi wi-horizon-alt"></span>
+        <h3 class="sunrise"></h3>
+      </div>
+      <div class="left-bottom-right">
+      <span class="wi wi-horizon"></span>
+        <h3 class="sunset"></h3>
+      </div>
+      <div class="left-bottom-bottom">
+      </div>
+    </div><!-- /.left-bottom-->
+  </div><!-- /.left -->
+  <div class="right">
+    <div class="right-top">
+      <div class="weather-icon">
+      
+<!-- icons -->
+
+        <div class="icon" id="sun-shower">
+          <div class="cloud"></div>
+          <div class="sun">
+            <div class="rays"></div>
+          </div>
+          <div class="rain"></div>
+        </div>
+
+        <div class="icon" id="thunder-storm">
+          <div class="cloud"></div>
+          <div class="lightning">
+            <div class="bolt"></div>
+            <div class="bolt"></div>
+          </div>
+        </div>
+
+        <div class="icon" id="cloudy">
+          <div class="cloud"></div>
+          <div class="cloud"></div>
+        </div>
+
+        <div class="icon" id="flurries">
+          <div class="cloud"></div>
+          <div class="snow">
+            <div class="flake"></div>
+            <div class="flake"></div>
+          </div>
+        </div>
+
+        <div class="icon" id="sunny">
+          <div class="sun">
+            <div class="rays"></div>
+          </div>
+        </div>
+
+        <div class="icon" id="rainy">
+          <div class="cloud"></div>
+          <div class="rain"></div>
+        </div>
+
+ <!-- /icons -->
+
+      </div><!-- /.weather-icon -->
+      <div class="condition">
+      </div>
+    </div><!-- /.right-top -->
+    <div class="right-bottom">
+      <div class="right-bottom-left">
+        <div class="wind-speed">
+          <div class="">
+            <span class="wi wi-strong-wind"></span>
+          </div>
+          <div class="wind-info">
+          </div>
+        </div>
+        <div class="wind-direction">
+          <span class="wi wi-wind-direction"></span>
+        </div>
+      </div> <!-- /.right-bottom-left -->
+      <div class="right-bottom-right">
+        <div class="">
+        </div>
+          <div class="switch-wrapper">
+            <a href="#">
+              <div class="switch">
+                <div class="selected border" id="fahrenheit">
+                  <span class="wi wi-fahrenheit"></span>
+                </div>
+                <div class="unselected" id="celsius">
+                  <span class="wi wi-celsius"></span>
+                </div>
+              </div> <!-- /.switch -->
+            </a>
+          </div>
+        </div> <!-- /.right-bottom-right -->
+      </div> <!-- /.right-bottom -->
+    </div> <!-- /.right -->
+  </div> <!-- /.container -->
+<div class="info">
+  <h5>Created by <a href="http://codepen.io/thirteenten/" target="blank_">Matt James</a>. Animated icons forked from <a href="http://codepen.io/joshbader/full/EjXgqr/" target="blank_">Josh Bader</a>. View code: <a href="https://github.com/thirteenten/quotegen.git" target"blank_"><span class="fa fa-github-square fa-lg"></span></a>
+  </h5>
+  </div>
+</body>
+</html>
